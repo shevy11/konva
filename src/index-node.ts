@@ -1,5 +1,6 @@
 // main entry for umd build for rollup
 import { Konva } from './_FullInternals';
+// @ts-ignore
 import * as Canvas from 'canvas';
 
 const canvas = Canvas['default'] || Canvas;
