@@ -11,6 +11,7 @@ docs
 homedocs
 jsdoc-template
 api
+lib
 package-lock.json
 src_old
 *.zip
