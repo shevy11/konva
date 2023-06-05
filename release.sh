@@ -18,16 +18,6 @@ if [ -z "$1" ]
         exit 2
 fi
 
-# make sure changle log updated
-while true; do
-    read -p "Did you update CHANGELOG.md? " yn
-    case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
-
 echo "Old version: ${old_version}"
 echo "New version: ${new_version}"
 
