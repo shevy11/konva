@@ -146,6 +146,24 @@ export class Canvas {
       }
     }
   }
+  /**
+   * to blob
+   * @method
+   * @name Konva.Canvas#toBlob
+   * @returns {Blob} data blob
+   */
+  async toBlob() {
+    try {
+      return new Promise<Blob>((resolve) => {
+        this._canvas.toBlob((blob) => {
+          resolve(blob);
+        });
+      });
+    } catch (err) {
+      Util.error(err.message);
+      return null;
+    }
+  }
 }
 
 /**
