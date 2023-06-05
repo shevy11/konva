@@ -5,7 +5,7 @@
 })(this, (function () { 'use strict';
 
   /*
-   * Konva JavaScript Framework v9.1.2
+   * Konva JavaScript Framework v9.1.3
    * http://konvajs.org/
    * Licensed under the MIT
    * Date: Mon Jun 05 2023
@@ -35,7 +35,7 @@
               : {};
   const Konva$2 = {
       _global: glob,
-      version: '9.1.2',
+      version: '9.1.3',
       isBrowser: detectBrowser(),
       isUnminified: /param/.test(function (param) { }.toString()),
       dblClickWindow: 400,
